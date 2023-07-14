@@ -1,5 +1,8 @@
-<template>
+<template> 
   <main>
+    <!-- <div> 
+      <h1>Home Page</h1>
+    </div> -->
     
     <div class="create-new">
       <input 
@@ -20,7 +23,6 @@
         <span v-for="i in stars.full" class="fas fa-star" aria-hidden="true"></span><span v-for="i in stars.half" class="fas fa-star-half-alt" aria-hidden="true"></span><span v-for="i in stars.empty" class="far fa-star" aria-hidden="true"></span>
       </span> -->
 
-      <!-- <p> <font-awesome-icon icon="star" /></p> -->
     </div>
 
     <div class="cards">
@@ -35,6 +37,8 @@
 
 <script>
 export default {
+  // name: 'index', => to create first page
+
   directives: {
     rating: {
       bind(el, binding) {
