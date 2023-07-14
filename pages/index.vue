@@ -18,11 +18,16 @@
         v-model="rating"     
         v-rating="5"
         placeholder="Add rating"  />
+        <b-form-rating v-model="rating"></b-form-rating>
+    <p class="mt-2">Rating: {{ rating }}</p>
       <button @click="addCard">Add</button>
-      <!-- <span class="stars">
-        <span v-for="i in stars.full" class="fas fa-star" aria-hidden="true"></span><span v-for="i in stars.half" class="fas fa-star-half-alt" aria-hidden="true"></span><span v-for="i in stars.empty" class="far fa-star" aria-hidden="true"></span>
-      </span> -->
 
+      <div class="d-flex flex-row mb-3">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      
     </div>
 
     <div class="cards">
@@ -55,7 +60,7 @@ export default {
     return {
       serviceName: '',
       businessName: '',
-      rating: 0
+      rating: null
     }
   },
   methods: {
@@ -70,7 +75,7 @@ export default {
 
         this.serviceName = '';
         this.businessName = '';
-        this.rating = 0;
+        this.rating = null;
       }
     }
   }
