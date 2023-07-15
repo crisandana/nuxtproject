@@ -1,8 +1,8 @@
 <template>
 	<div :class="`card`">
 		<div class="content">{{ card.serviceName }}</div>
-        <div class="content">{{ card.businessName }}</div>
-        <div class="content">{{ card.rating }}</div>
+		<div class="content">{{ card.businessName }}</div>
+		<div class="content">{{ card.rating }}</div>
 		<div class="buttons">
 			<button @click="removeCard" class="delete">Delete</button>
 		</div>
