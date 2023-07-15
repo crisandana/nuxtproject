@@ -1,14 +1,10 @@
 <template> 
   <main>
-    <!-- <div> 
-      <h1>Home Page</h1>
-    </div> -->
-    
     <div class="create-new">
-      <input 
+        <input 
         type="text" 
         v-model="serviceName" 
-        placeholder="Add a service name" />
+        placeholder="Add a service name" /> 
         <input 
         type="text" 
         v-model="businessName" 
@@ -19,16 +15,10 @@
         v-rating="5"
         placeholder="Add rating"  />
         <b-form-rating v-model="rating"></b-form-rating>
-    <p class="mt-2">Rating: {{ rating }}</p>
-      <button @click="addCard">Add</button>
-
-      <div class="d-flex flex-row mb-3">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-        <div class="p-2">Flex item 3</div>
-      </div>
-      
-    </div>
+        <p class="mt-2">Rating: {{ rating }}</p>
+        <button @click="addCard">Add</button>
+     </div>  
+    
 
     <div class="cards">
       <Card
@@ -36,6 +26,7 @@
         :key="i"
         :card="card" />
     </div>
+  
 
   </main>
 </template>
